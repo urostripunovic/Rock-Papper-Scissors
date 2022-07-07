@@ -72,12 +72,12 @@ function game() {
             playerSelection = playerSelection.toLowerCase();
             while (!playerSelection.includes('roc') && !playerSelection.includes('pap') && !playerSelection.includes('sci')) {
                 playerSelection = prompt("Type rock, paper, or scissors\nTry and spell  the first three letters correctly");
-                if (playerSelection === null) return alert("Thanks for playing!");
+                if (playerSelection === null) return alert("Already leaving? 😔");
             }
             let computerSelection = computerPlay();
             console.log(playRound(playerSelection, computerSelection));
         } else {
-            return alert('Thanks for playing!');
+            return alert('Already leaving? 😔');
         }
     }
     winnerWinnerChickenDinner();
