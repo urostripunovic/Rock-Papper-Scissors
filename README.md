@@ -2,7 +2,7 @@
 A simple project to try out some CSS animations 
 ---
 - [x] Console version of the game
-- [] UI version of the game
+- [ ] UI version of the game
 ---
 ### Assets and Resources
 [Odin project for rock paper scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors#quick-exercises-before-starting)
