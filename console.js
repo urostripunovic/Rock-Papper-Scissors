@@ -74,8 +74,7 @@ function game() {
                 playerSelection = prompt("Type rock, paper, or scissors\nTry and spell  the first three letters correctly");
                 if (playerSelection === null) return alert("Already leaving? 😔");
             }
-            let computerSelection = computerPlay();
-            console.log(playRound(playerSelection, computerSelection));
+            console.log(playRound(playerSelection, computerPlay()));
         } else {
             return alert('Already leaving? 😔');
         }
