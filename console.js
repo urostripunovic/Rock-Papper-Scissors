@@ -69,6 +69,7 @@ function game() {
         let playerSelection = prompt('Type rock, paper or scissor');
         if (playerSelection !== null) {
             //TODO: Så spelet inte forsätter även om vi skriver fel
+            playerSelection = playerSelection.toLowerCase();
             while (!playerSelection.includes('roc') && !playerSelection.includes('pap') && !playerSelection.includes('sci')) {
                 playerSelection = prompt("Type rock, paper, or scissors\nTry and spell  the first three letters correctly");
                 if (playerSelection === null) return alert("Thanks for playing!");
