@@ -1,5 +1,6 @@
 # Rocker Paper Scissors
 A simple project to try out some CSS animations 
+[Link to the site if you would like to try](https://main--whimsical-cobbler-8697e6.netlify.app/)
 ---
 - [x] Console version of the game
 - [x] UI version of the game
