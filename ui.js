@@ -68,7 +68,7 @@ function winnerWinnerChickenDinner() {
         console.log('You won the game');
         document.querySelector('#result').innerHTML = 'You won the game</br></br>Refresh the page to start over';
     } else if (computerScore === 3 && playerScore < computerScore) {
-        gameOver = false;
+        gameOver = true;
         console.log('Computer won the game');
         document.querySelector('#result').innerHTML = 'Computer won the game</br></br>Refresh the page to start over';
     }
