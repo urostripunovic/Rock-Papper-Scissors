@@ -21,11 +21,9 @@ function playRound(playerSelection, computerSelection) {
             return 'It is a tie';
         } else if (computerSelection === 'paper') {
             increaseScore(false);
-            printScore();
             return 'Paper beats rock, you lose!';
         } else if (computerSelection === 'scissor') {
             increaseScore(true);
-            printScore();
             return 'Rock beats scissor, you win!';
         }
     } else if (playerSelection.includes('sci')) {
@@ -34,31 +32,22 @@ function playRound(playerSelection, computerSelection) {
             return 'It is a tie';
         } else if (computerSelection === 'paper') {
             increaseScore(true);
-            printScore();
             return 'Scissor beats paper, you win!'
         } else if (computerSelection === 'rock') {
             increaseScore(false);
-            printScore();
             return 'Rock beats scissor, you lose!';
         }
     } else if (playerSelection.includes('pap')) {
         if (computerSelection === 'paper') {
-            printScore();
             return 'It is a tie';
         } else if (computerSelection === 'scissor') {
             increaseScore(false);
-            printScore();
             return 'Scissor beats paper, you lose!'
         } else if (computerSelection === 'rock') {
             increaseScore(true);
-            printScore();
             return 'Paper beats rock, you win!';
         }
     }
-}
-
-function printScore() {
-    console.log("player: " + playerScore + " computer: " + computerScore);
 }
 
 function game() {
@@ -78,9 +67,14 @@ function game() {
         } else {
             return alert('Already leaving? 😔');
         }
+        printScore();
     }
     winnerWinnerChickenDinner();
     resetGame();
+}
+
+function printScore() {
+    console.log("Player: " + playerScore + " Computer: " + computerScore);
 }
 
 function increaseScore(playerWon) {
