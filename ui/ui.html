@@ -9,19 +9,63 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="icon"
         href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/video-game_1f3ae.png"
-        type="image/x-icon">
-        
-    <link rel="stylesheet" href="console.css">
+        type="image/x-icon"
+    >    
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             box-sizing: border-box;
-            font-family: 'Montserrat', BLACK;
+            font-family: 'Montserrat', black;
         }
     </style>
 </head>
-
 <body>
-    <div>Hello World!</div>
+    <div class="container">
+        <a href="C:\Users\Uros\Documents\GitHub\Rock-Papper-Scissors\index.html"><i style="font-size: 25px;" class="fa fa-home"> Home</i></a>
+        <h1 style="text-align: center;">Choose an icon</h1>
+        <p style="text-align: center;">You play for a best of 5</p>
+        <div class="icons">
+            <button id="rock" class="icon">👊</button>
+            <button id="paper" class="icon">✋</button>
+            <button id="scissor" class="icon">✌️</button>
+        </div>
+
+        <div class="score-container">
+            <div class="user-score">
+                Your score:
+                <span id="user-score">0</span>
+            </div>
+            <div class="computer-score">
+                Computer score:
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div>
+            <div id="hands">
+                <div class="hand" id="user-hand">
+                    <div class="fist"></div>
+                    <div class="finger finger-1"></div>
+                    <div class="finger finger-2"></div>
+                    <div class="finger finger-3"></div>
+                    <div class="finger finger-4"></div>
+                    <div class="thumb"></div>
+                </div>
+
+                <div class="hand" id="computer-hand">
+                  <div class="fist"></div>
+                  <div class="finger finger-1"></div>
+                  <div class="finger finger-2"></div>
+                  <div class="finger finger-3"></div>
+                  <div class="finger finger-4"></div>
+                  <div class="thumb"></div>
+                </div>
+            </div>
+                <h2 id="result" class="result"></h2>
+            </div>
+    </div>
 </body>
 <script src="ui.js"> </script>
 </html>
